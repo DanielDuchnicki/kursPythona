@@ -18,4 +18,5 @@ def komentarz_bmi(wskaznik_bmi):
 
 
 for waga in range(50, 151, 5):
-    print("Waga: " + str(waga) + "; Wzrost: 190; Twoje BMI: " + str(bmi(waga, 190)) + " - " + komentarz_bmi(bmi(waga, 190)))
+    print("Waga: " + str(waga) + "; Wzrost: 190; Twoje BMI: " + str(bmi(waga, 190)) +
+          " - " + komentarz_bmi(bmi(waga, 190)))
