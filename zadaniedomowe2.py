@@ -3,11 +3,11 @@ def znajdz_nominaly(nominaly, kwota):
     for item in nominaly:
         reszta_z_dzielenia = kwota % item
         if reszta_z_dzielenia == 0:
-            wybrane_nominaly[item] = int(kwota / item)
+            wybrane_nominaly[item] = kwota // item
             break
         else:
             if ((kwota - reszta_z_dzielenia) / item) != 0:
-                wybrane_nominaly[item] = int((kwota - reszta_z_dzielenia) / item)
+                wybrane_nominaly[item] = (kwota - reszta_z_dzielenia) // item
                 kwota = reszta_z_dzielenia
     return wybrane_nominaly
 
