@@ -37,9 +37,3 @@ def wypisz_nominaly(kwota, wybrane_nominaly):
                 print("- " + str(wybrane_nominaly[key]) + " razy banknot " + str(key) + "-złotowy")
             else:
                 print("- " + str(wybrane_nominaly[key]) + " razy monetę " + str(key) + "-złotową")
-
-
-nominaly_w_portfelu = [20, 10, 5, 2, 1]
-twoj_portfel = [8, 6, 2, 1, 0]
-for kwota_do_zaplaty in range(8, 300, 37):
-    wypisz_nominaly(kwota_do_zaplaty, rozmien(nominaly_w_portfelu, twoj_portfel, kwota_do_zaplaty))

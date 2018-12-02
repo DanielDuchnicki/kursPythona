@@ -22,4 +22,3 @@ def rozmien(portfel, kwota):
                 wynik[nominal] += 1
 
     return wynik
-

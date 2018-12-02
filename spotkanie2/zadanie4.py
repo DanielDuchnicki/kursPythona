@@ -7,6 +7,3 @@ def pierwsza(n):
         return print("Liczba " + str(n) + " jest liczbą pierwszą.")
     else:
         return print("Liczba " + str(n) + " NIE jest liczbą pierwszą.")
-
-
-pierwsza(2)

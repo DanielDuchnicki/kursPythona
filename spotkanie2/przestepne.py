@@ -15,6 +15,3 @@ def nadchodzace_lp(n):
             wynik.append(akt_rok)
         akt_rok += 1
     return wynik
-
-
-print(nadchodzace_lp(4))

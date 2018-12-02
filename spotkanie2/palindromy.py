@@ -7,10 +7,3 @@ def wersja1(slowo):
 
 def wersja2(slowo):
     return slowo == slowo[::-1]
-
-
-dane = ['kajak', 'kobyłamamałybok', 'palindrom', [1, 2, 1], [2, 3]]
-wersje = [wersja1, wersja2]
-for funkcja in wersje:
-    for slowo in dane:
-        print("{0}: {1}".format(slowo, funkcja(slowo)))

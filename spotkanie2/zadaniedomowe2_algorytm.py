@@ -30,5 +30,3 @@ def ruch_komputera2(stan_gry):
     """To jest prosta strategia"""
     ruch = max(1, min(3, stan_gry - 1))
     return ruch
-
-gra_w_zapalki()
