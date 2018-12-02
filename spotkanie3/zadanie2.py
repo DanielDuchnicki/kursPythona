@@ -33,11 +33,5 @@ def znajdz_pliki_o_tym_samym_rozmiarze(file_dictionary):
         if len(file_dictionary[key]) > 1:
             print("Pliki o tym samym rozmiarze to: ")
             print("Rozmiar: " + str(key))
-            for item in files_dictionary[key]:
+            for item in file_dictionary[key]:
                 print(item)
-
-
-files_dictionary = {}
-przegladanie('.', files_dictionary)
-print(files_dictionary)
-znajdz_pliki_o_tym_samym_rozmiarze(files_dictionary)

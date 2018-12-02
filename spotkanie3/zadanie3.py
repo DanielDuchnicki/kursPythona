@@ -10,9 +10,3 @@ def statystyka(nazwa_pliku):
                 liczba_zdan_slow_znakow_list[0] += 1
 
     return liczba_zdan_slow_znakow_list
-
-
-wyniki = statystyka("tekst.txt")
-print("Liczba zdań: " + str(wyniki[0]))
-print("Liczba słów: " + str(wyniki[1]))
-print("Liczba znaków: " + str(wyniki[2]))
