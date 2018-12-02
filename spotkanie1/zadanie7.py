@@ -4,6 +4,3 @@ def klasyfikator(napis):
             print("+ " + slowo)
         else:
             print("- " + slowo)
-
-
-klasyfikator("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")

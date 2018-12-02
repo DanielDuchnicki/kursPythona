@@ -5,7 +5,3 @@ def kwadrat(n):
 
 def kwadrat2(n):
     print(("#" * n + '\n') * n)
-
-
-kwadrat(6)
-kwadrat2(6)

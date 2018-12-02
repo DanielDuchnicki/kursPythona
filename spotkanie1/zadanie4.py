@@ -8,6 +8,3 @@ def podatek(kwota):
         wynik = 0.19 * 44490 + 0.3 * (85528-44490) + 0.4 * (kwota - 85528)
 
     return wynik
-
-
-print(podatek(85529))

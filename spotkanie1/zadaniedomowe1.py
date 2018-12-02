@@ -15,8 +15,3 @@ def komentarz_bmi(wskaznik_bmi):
         wskaznik_bmi >= 40: "III stopień otyłości (otyłość skrajna)",
     }
     return komentarz[True]
-
-
-for waga in range(50, 151, 5):
-    print("Waga: " + str(waga) + "; Wzrost: 190; Twoje BMI: " + str(bmi(waga, 190)) +
-          " - " + komentarz_bmi(bmi(waga, 190)))
