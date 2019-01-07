@@ -2,6 +2,7 @@ from urllib.request import *
 from collections import defaultdict
 import re
 
+
 def statystyka(plik):
     slownik = defaultdict(int)
     plik_do_czytania = urlopen(plik)
@@ -10,7 +11,7 @@ def statystyka(plik):
         linia_zdekodowana = linia.decode("utf-8").lower()
         for slowo in re.split(' |!|\\?|\.|;|:|, |,|\*|\n|/|—|\r', linia_zdekodowana):
             if not re.match(r'^\s*$', slowo):
-                slownik[slowo] +=1
+                slownik[slowo] += 1
 
     slownik_posortowany_po_wartosciach = {}
     for slowo in sorted(slownik, key=slownik.get, reverse=True):

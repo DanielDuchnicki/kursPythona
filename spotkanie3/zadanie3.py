@@ -1,4 +1,10 @@
+class NotStringError(Exception):
+    pass
+
+
 def statystyka(nazwa_pliku):
+    if not isinstance(nazwa_pliku, str):
+        raise NotStringError
     liczba_zdan_slow_znakow_list = [0, 0, 0]
     with open(nazwa_pliku, 'r') as fh:
         tekst = fh.read()
@@ -10,3 +16,6 @@ def statystyka(nazwa_pliku):
                 liczba_zdan_slow_znakow_list[0] += 1
 
     return liczba_zdan_slow_znakow_list
+
+
+statystyka("123")

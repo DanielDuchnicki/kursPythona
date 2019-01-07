@@ -1,4 +1,10 @@
+class NotIntError(Exception):
+    pass
+
+
 def pierwsza(n):
+    if not isinstance(n, int):
+        raise NotIntError
     suma_dzielnikow_liczby_n = []
     for item in range(1, n):
         if n % item == 0:
@@ -7,3 +13,6 @@ def pierwsza(n):
         return print("Liczba " + str(n) + " jest liczbą pierwszą.")
     else:
         return print("Liczba " + str(n) + " NIE jest liczbą pierwszą.")
+
+
+pierwsza("abcd")

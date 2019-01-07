@@ -35,7 +35,7 @@ def wyswietl_portfel(twoj_portfel):
 
 portfel = {"Energa SA": 500, "PGE SA": 400, "PGNiG SA": 1000, "Tauron Polska Energia SA": 1000,
            "Trakcja PRKiI SA": 1000, "Ursus SA": 1000}
-plik_z_notowaniami = 'moneypl-1544365631032.csv'
+plik_z_notowaniami = 'moneypl-1544518926335.csv'
 
 portfel_z_wartosciami = policz_wartosc_spolek(portfel, wczytaj_plik_notowan(plik_z_notowaniami))
 wyswietl_portfel(portfel_z_wartosciami)
